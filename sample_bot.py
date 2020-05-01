@@ -40,7 +40,7 @@ def get_telegram_token():
     configError = "Please open config.txt file located in the project directory and relace the value '0' of Telegram-Bot-Token with the Token you recieved from botfather"
     if 'config.json' not in os.listdir():
         with open('config.json', mode='w') as f:
-            json.dump({'Telegram-Bot-Token': '<Replace this with token>'}, f)
+            json.dump({'Telegram-Bot-Token': '724633379:AAG4Tw95OzjK2KsDl4HnVjouzsjjG1iw2Rk'}, f)
             logging.error(configError)
             sys.exit(0)
     else:
